@@ -1,0 +1,16 @@
+import json
+
+with open('Json_file1.json', 'r') as JsonFile1:
+  JasonToPython = json.load(JsonFile1)
+  print(JasonToPython)
+
+with open('Json_file2.json', 'w') as JsonFile2:
+  json.dumps(JasonToPython)
+
+#Json_file1.json
+{           "name":"Saumya Bharti", 
+            "age":21,
+            "average": 89.9,
+            "drivers_licence": null,
+            "failing?": false
+}
